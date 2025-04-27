@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ส่งข้อเสนอแนะถึง สส ณัฐจิรา</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f2f2f2;
+      padding: 30px;
+    }
+    h1 {
+      color: #d35400;
+      text-align: center;
+    }
+    form {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 20px;
+      background-color: #e67e22;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>ส่งข้อเสนอแนะถึง สส เม ดร. ณัฐจิรา อิ่มวิเศษ</h1>
+
+  <form action="/submit" method="POST" enctype="multipart/form-data">
+    <label for="name">ชื่อ-นามสกุล (ไม่บังคับ)</label>
+    <input type="text" id="name" name="name">
+
+    <label for="area">พื้นที่ที่สังกัด</label>
+    <select id="area" name="area" required>
+      <option value="">-- กรุณาเลือกเขต --</option>
+      <option value="โนนไทย">โนนไทย</option>
+      <option value="สูงเนิน">สูงเนิน</option>
+      <option value="ขามทะเลสอ">ขามทะเลสอ</option>
+    </select>
+
+    <label for="topic">หัวข้อข้อเสนอแนะ</label>
+    <input type="text" id="topic" name="topic" required>
+
+    <label for="details">รายละเอียดข้อเสนอแนะ</label>
+    <textarea id="details" name="details" rows="6" required></textarea>
+
+    
+
+    <button type="submit">ส่งข้อเสนอ</button>
+  </form>
+</body>
+</html>
