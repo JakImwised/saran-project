@@ -1,0 +1,9 @@
+{
+  "name": "saran-project",
+  "version": "1.0.0",
+  "main": "server1.js",
+  "scripts": {
+    "start": "node server1.js"
+  },
+  "dependencies": {}
+}
